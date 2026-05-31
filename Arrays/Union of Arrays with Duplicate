@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+vector<int> findUnion(vector<int> &a, vector<int> &b)
+{
+    // code here
+    set<int> uni;
+    for (int i = 0; i < a.size(); i++)
+    {
+        uni.insert(a[i]);
+    }
+    for (int i = 0; i < b.size(); i++)
+    {
+        uni.insert(b[i]);
+    }
+    vector<int> res(uni.begin(), uni.end());
+    return res;
+}
